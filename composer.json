@@ -24,7 +24,6 @@
         "ext-pdo": "*",
         "topthink/think-helper": "^1.0",
         "topthink/think-image": "^1.0",
-        "thinkcmf/cmf-app": "~5.1.0",
         "thinkcmf/cmf-install": "~5.1.0",
         "thinkcmf/cmf-api": "~5.1.0"
     },

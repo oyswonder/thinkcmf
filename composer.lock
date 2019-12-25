@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb81fe2b9305f8dc78b7e09f7b950585",
+    "content-hash": "7f12e166b10a819e1104cc27b60e2943",
     "packages": [
         {
             "name": "electrolinux/phpquery",
@@ -291,43 +291,6 @@
             ],
             "description": "The ThinkCMF 5.1 Core Api Package",
             "time": "2019-07-23T23:29:11+00:00"
-        },
-        {
-            "name": "thinkcmf/cmf-app",
-            "version": "v5.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thinkcmf/cmf-app.git",
-                "reference": "dd02fc871dcfccc59ac21750ce6ddec359e79e7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thinkcmf/cmf-app/zipball/dd02fc871dcfccc59ac21750ce6ddec359e79e7d",
-                "reference": "dd02fc871dcfccc59ac21750ce6ddec359e79e7d",
-                "shasum": ""
-            },
-            "require": {
-                "thinkcmf/cmf": "~5.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "app\\": "src"
-                },
-                "files": []
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "catman",
-                    "email": "catman@thinkcmf.com"
-                }
-            ],
-            "description": "The ThinkCMF App Package",
-            "time": "2019-09-06T03:58:33+00:00"
         },
         {
             "name": "thinkcmf/cmf-extend",
