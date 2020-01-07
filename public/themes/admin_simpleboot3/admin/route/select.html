@@ -26,10 +26,10 @@
 
         if ($actionArr[2] == 'index') {
         $actionArr[1] = cmf_parse_name($actionArr[1]);
-        return empty($params) ? $actionArr[1].'$' : ($actionArr[1] . '/' . implode('/', $urlDepr1Params) /*. '或' . $actionArr[1] . '-' . implode('-', $urlDepr2Params)*/);
+        return empty($params) ? $actionArr[1].'$' : ($actionArr[1] . '/' . implode('/', $urlDepr1Params) /*. lang('OR') . $actionArr[1] . '-' . implode('-', $urlDepr2Params)*/);
         } else {
         $actionArr[2] = cmf_parse_name($actionArr[2]);
-        return empty($params) ? $actionArr[2].'$' : ($actionArr[2] . '/' . implode('/', $urlDepr1Params) /*. '或' . $actionArr[2] . '-' . implode('-', $urlDepr2Params)*/);
+        return empty($params) ? $actionArr[2].'$' : ($actionArr[2] . '/' . implode('/', $urlDepr1Params) /*. lang('OR') . $actionArr[2] . '-' . implode('-', $urlDepr2Params)*/);
         }
 
         }
@@ -57,9 +57,9 @@
                 <th width="16">
                 </th>
                 <th width="50">URL</th>
-                <th>URL名称</th>
-                <th>参数</th>
-                <th>建议优化</th>
+                <th>{:lang('URL_NAME')}</th>
+                <th>{:lang('PARAM')}</th>
+                <th>{:lang('OPTIMIZATION_SUGGESTION')}</th>
             </tr>
             </thead>
             <tbody>

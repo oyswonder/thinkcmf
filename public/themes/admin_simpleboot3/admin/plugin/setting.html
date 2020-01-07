@@ -19,7 +19,7 @@
             <div class="col-sm-offset-2 col-sm-10">
                 <input type="hidden" name="id" value="{$id}" readonly>
                 <button type="submit" class="btn btn-primary js-ajax-submit" data-refresh="0">保存</button>
-                <a class="btn btn-default" href="javascript:history.back(-1);">返回</a>
+                <a class="btn btn-default" href="javascript:history.back(-1);">{:lang('BACK')}</a>
             </div>
         </div>
     </form>
@@ -54,7 +54,7 @@
             title,
             {
                 area: ['700px', '90%'],
-                btn: ['确定', '取消'],
+                btn: ['{:lang('OK')}', '{:lang('CANCEL')}'],
                 yes: function (index, layero) {
                     var iframeWin = parent.window[layero.find('iframe')[0]['name']];
                     var location  = iframeWin.confirm();

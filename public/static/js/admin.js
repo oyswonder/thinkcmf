@@ -89,7 +89,7 @@
                         id: 'warning',
                         icon: 'warning',
                         content: btn.data('msg'),
-                        cancelVal: '关闭',
+                        cancelVal: 'Close',
                         cancel: function () {
                             //btn.data('subcheck', false);
                             //btn.click();
@@ -272,7 +272,7 @@
                                     id: 'warning',
                                     icon: 'warning',
                                     content: statusText,
-                                    cancelVal: '关闭',
+                                    cancelVal: 'Close',
                                     cancel: function () {
                                         reloadPage(window);
                                     },
@@ -323,13 +323,13 @@
                 art.dialog({
                     title: false,
                     icon: 'question',
-                    content: msg ? msg : '确定要删除吗？',
+                    content: msg ? msg : 'Are you sure to delete?',
                     follow: $_this,
                     close: function () {
                         $_this.focus(); //关闭时让触发弹窗的元素获取焦点
                         return true;
                     },
-                    okVal: "确定",
+                    okVal: "OK",
                     ok: function () {
                         $.getJSON(href).done(function (data) {
                             if (data.code == '1') {
@@ -372,7 +372,7 @@
                             }
                         });
                     },
-                    cancelVal: '关闭',
+                    cancelVal: 'Close',
                     cancel: true
                 });
             });
@@ -449,7 +449,7 @@
                             }
                         })
                     },
-                    cancelVal: '关闭',
+                    cancelVal: 'Close',
                     cancel: true
                 });
             });

@@ -3,8 +3,8 @@
 <body>
 <div class="wrap">
     <ul class="nav nav-tabs">
-        <li><a href="{:url('AdminUserAction/index')}">用户操作管理</a></li>
-        <li class="active"><a>编辑用户操作</a></li>
+        <li><a href="{:url('AdminUserAction/index')}">{:lang('USER_OPERATION_MANAGEMENT')}</a></li>
+        <li class="active"><a>{:lang('EDIT_USER_ACTIONS')}</a></li>
     </ul>
     <form method="post" class="form-horizontal js-ajax-form margin-top-20" action="{:url('AdminUserAction/editPost')}">
         <div class="form-group">
@@ -25,7 +25,7 @@
             <label for="input-cycle_type" class="col-sm-2 control-label">周期类型</label>
             <div class="col-md-6 col-sm-10">
                 <select name="cycle_type" id="input-cycle_type" class="form-control">
-                    <option value="0">不限</option>
+                    <option value="0">{:lang('UNLIMITED')}</option>
                     <option value="1">天</option>
                     <option value="2">小时</option>
                     <option value="3">永久</option>

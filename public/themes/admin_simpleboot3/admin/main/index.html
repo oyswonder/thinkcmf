@@ -3,109 +3,12 @@
         function _get_system_widget($name){
 </php>
 <switch name="name">
-    <case value="CmfHub">
+    <case value="Demo">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">交流方式</h3>
+                <h3 class="panel-title">Demo</h3>
             </div>
             <div class="panel-body home-info">
-                <ul class="list-unstyled">
-                    <li>
-                        <em>官网</em> <span><a href="http://www.thinkcmf.com" target="_blank">www.thinkcmf.com</a></span>
-                    </li>
-                    <li><em>QQ 群</em> <span>100828313,316669417</span></li>
-                    <li><em>联系邮箱</em> <span>catman@thinkcmf.com</span></li>
-                </ul>
-            </div>
-        </div>
-    </case>
-    <case value="CmfDocuments">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">开发手册</h3>
-            </div>
-            <div class="panel-body home-info">
-                <ul class="list-unstyled">
-                    <li>
-                        <em>完全开发手册</em>
-                        <span>
-                            <a class="label label-success" href="http://www.thinkcmf.com/doc.html"
-                               target="_blank">立即阅读</a>
-                        </span>
-                    </li>
-                    <li>
-                        <em>常见问题手册</em>
-                        <span>
-                            <a class="label label-success" href="http://www.thinkcmf.com/faq.html"
-                               target="_blank">立即阅读</a>
-                        </span>
-                    </li>
-                    <li>
-                        <em>模板开发教程</em>
-                        <span>
-                            <a class="label label-success" href="http://www.thinkcmf.com/theme_tutorial.html"
-                               target="_blank">立即阅读</a>
-                        </span>
-                    </li>
-                    <li>
-                        <em>API开发手册</em>
-                        <span>
-                            <a class="label label-success" href="http://www.thinkcmf.com/cmf5api.html"
-                               target="_blank">立即阅读</a>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </case>
-    <case value="MainContributors">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">主要贡献者</h3>
-            </div>
-            <div class="panel-body home-info">
-                <ul class="list-inline">
-                    <li>老猫</li>
-                    <li>Sam</li>
-                    <li>Tuolaji</li>
-                    <li>睡不醒的猪</li>
-                    <li>小夏</li>
-                    <li>Powerless</li>
-                    <li>WelKinVan</li>
-                    <li>Kane</li>
-                    <li>iYting</li>
-                    <li>pl125</li>
-                    <li>五五</li>
-                </ul>
-            </div>
-        </div>
-    </case>
-    <case value="Contributors">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">贡献者</h3>
-            </div>
-            <div class="panel-body home-info">
-                <ul class="list-inline">
-                    <li>Kin Ho</li>
-                    <li><a href="https://www.wzxaini9.cn/" target="_blank">Powerless</a></li>
-                    <li>Jess</li>
-                    <li>木兰情</li>
-                    <li>Labulaka</li>
-                    <li><a href="http://www.wzcoder.com/" target="_blank">WelKinVan</a></li>
-                    <li><a href="http://blog.sina.com.cn/u/1918098881" target="_blank">Jeson</a></li>
-                    <li>Yim</li>
-                    <li><a href="http://www.jamlee.cn/" target="_blank">Jamlee</a></li>
-                    <li>香香咸蛋黄</li>
-                    <li><a href="http://www.xdmeng.cn" target="_blank">小凯</a></li>
-                    <li>Co</li>
-                    <li>Rainfer</li>
-                    <li><a href="http://www.yaoweixiu.cn/" target="_blank">Kane</a></li>
-                    <li>北岸的云</li>
-                    <li>pl125</li>
-                    <li><a href="http://www.wuwuseo.com/" target="_blank">五五</a></li>
-                    <li><a href="https://www.qdcrazy.cc/" target="_blank">惠达浪</a></li>
-                </ul>
             </div>
         </div>
     </case>
@@ -159,9 +62,9 @@
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <strong>提示!</strong> 邮箱配置未完成,无法进行邮件发送!
+                <strong>{:lang('TIPS!')}</strong> {:lang('MAILBOX_CONFIGURATION_IS_NOT_COMPLETED')}
                 <a href="#" data-dismiss="alert" aria-label="Close"
-                   onclick="parent.openapp('{:url('Mailer/index')}','admin_mailer_index','邮箱配置');">现在设置</a>
+                   onclick="parent.openapp('{:url('Mailer/index')}','admin_mailer_index','{:lang('ADMIN_MAILER_INDEX')}');">{:lang('SET_NOW')}</a>
             </div>
         </div>
     </empty>
@@ -172,22 +75,22 @@
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <strong>提示!</strong> php_fileinfo扩展没有开启，无法正常上传文件！
+                <strong>{:lang('TIPS!')}</strong> php_fileinfo扩展没有开启，无法正常上传文件！
             </div>
         </div>
     </if>
 
-    <div class="grid-item col-md-12" id="thinkcmf-notices-grid" style="display:none;">
+    <div class="grid-item col-md-12" id="official-notices-grid" style="display:none;">
         <div class="dashboard-box">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">{:lang('SYSTEM_NOTIFICATIONS')}</h3>
                 </div>
                 <div class="panel-body home-info">
-                    <ul id="thinkcmf-notices" class="list-unstyled">
+                    <ul id="official-notices" class="list-unstyled">
                         <li>
                             <img src="__TMPL__/public/assets/images/loading.gif" style="vertical-align: middle;"/>
-                            <span style="display: inline-block; vertical-align: middle;">加载中...</span>
+                            <span style="display: inline-block; vertical-align: middle;">{:lang('LOADING')}</span>
                         </li>
                     </ul>
                 </div>
@@ -322,14 +225,15 @@
         });
     }
 
-    //获取官方通知
-    $.getJSON("//www.thinkcmf.com/service/sms_jsonp.php?lang={$lang_set}&v={$thinkcmf_version}&callback=?",
+    // Get official notices
+    $.getJSON(
+        "", // Official notices API URL
         function (data) {
             var tpl      = '<li><em class="title"></em><span class="content"></span></li>';
-            var $notices = $("#thinkcmf-notices");
+            var $notices = $("#official-notices");
             $notices.empty();
             if (data.length > 0) {
-                $('#thinkcmf-notices-grid').show();
+                $('#official-notices-grid').show();
                 $.each(data, function (i, n) {
                     var $tpl = $(tpl);
                     $(".title", $tpl).html(n.title);
