@@ -1,5 +1,5 @@
 {
-    "name": "thinkcmf/thinkcmf",
+    "name": "oyswonder/thinkcmf",
     "description": "ThinkCMF based on ThinkPHP 5.1 , it is a free and open source Content Management Framework(CMF)",
     "type": "project",
     "keywords": [
@@ -13,8 +13,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "thinkcmf",
-            "email": "catman@thinkcmf.com"
+            "name": "oyswonder",
+            "email": "879097251@qq.com"
         }
     ],
     "require": {
@@ -24,8 +24,9 @@
         "ext-pdo": "*",
         "topthink/think-helper": "^1.0",
         "topthink/think-image": "^1.0",
+        "oyswonder/cmf-app": "~5.1.0",
         "thinkcmf/cmf-install": "~5.1.0",
-        "thinkcmf/cmf-api": "~5.1.0"
+        "oyswonder/cmf-api": "~5.1.0"
     },
     "extra": {
         "think-path": "vendor/thinkphp",
@@ -33,11 +34,5 @@
     },
     "config": {
         "vendor-dir": "vendor"
-    },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
-        }
     }
 }
