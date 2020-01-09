@@ -25,20 +25,20 @@
 						<td>{$vo.remark}</td>
 						<td>
 							<if condition="$vo['status'] eq 1">
-								<span class="label label-success">已启用</span>
+								<span class="label label-success">{:lang('ENABLED')}</span>
 							<else />
-								<span class="label label-danger">已禁用</span>
+								<span class="label label-danger">{:lang('DISABLED')}</span>
 							</if>
 						</td>
 						<td>
 							<if condition="$vo['id'] eq 1">
 								<span class="btn btn-xs btn-primary disabled">{:lang('ROLE_SETTING')}</span>
-								<!-- <a href="javascript:openIframeDialog('{:url('rbac/member',array('id'=>$vo['id']))}','成员管理');">成员管理</a> | -->
+								 <!--<a href="javascript:openIframeDialog('{:url('rbac/member',array('id'=>$vo['id']))}','{:lang('ADMIN_RBAC_MEMBER')}');">{:lang('ADMIN_RBAC_MEMBER')}</a> |-->
 								<span class="btn btn-xs btn-primary disabled">{:lang('EDIT')}</span>
 								<span class="btn btn-xs btn-danger disabled">{:lang('DELETE')}</span>
 							<else />
 								<a class="btn btn-xs btn-primary" href="{:url('Rbac/authorize',array('id'=>$vo['id']))}">{:lang('ROLE_SETTING')}</a>
-								<!-- <a href="javascript:openIframeDialog('{:url('rbac/member',array('id'=>$vo['id']))}','成员管理');">成员管理</a>| -->
+								<!-- <a href="javascript:openIframeDialog('{:url('rbac/member',array('id'=>$vo['id']))}','{:lang('ADMIN_RBAC_MEMBER')}');">{:lang('ADMIN_RBAC_MEMBER')}</a>| -->
 								<a class="btn btn-xs btn-primary" href="{:url('Rbac/roleedit',array('id'=>$vo['id']))}">{:lang('EDIT')}</a>
 								<a class="btn btn-xs btn-danger js-ajax-delete" class="" href="{:url('Rbac/roledelete',array('id'=>$vo['id']))}">{:lang('DELETE')}</a>
 							</if>
